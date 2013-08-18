@@ -52,7 +52,7 @@
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-
+    NSLog(@"prepareForSegue");
     
     if ([segue.identifier isEqualToString:@"PersonDetailSegue"]) {
         
