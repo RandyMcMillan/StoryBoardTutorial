@@ -61,7 +61,8 @@
         Person *p = [self.people objectAtIndex:ip.row];
         
         PersonDetailViewController  *pdv = (PersonDetailViewController *)segue.destinationViewController;
-        //pdv.person = p;
+        pdv.person = p;
+        
         [pdv loadObject:p];
     
     }
