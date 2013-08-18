@@ -25,7 +25,15 @@
     return self;
 }
 
-- (void)loadObject:(NSObject *)object {}
+- (void)loadObject:(Person *)object {
+
+
+    NSLog(@"fname = %@",object.fname);
+    NSLog(@"sname = %@",object.sname);
+    NSLog(@"fav color = %@",object.favoriteColor);
+    
+
+}
 
 - (void)viewDidLoad
 {
@@ -36,7 +44,7 @@
     self.snameLabel.text = self.person.sname;
     self.ageLabel.text = [NSString stringWithFormat:@"%i",self.person.age];
     
-    [self.view setBackgroundColor:[UIColor redColor]];//person.favoriteColor];
+    [self.view setBackgroundColor:self.person.favoriteColor];
     
 }
 
